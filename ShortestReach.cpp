@@ -25,7 +25,7 @@ int d=0;
 
             for(int i=0; i<vec[k].size(); i++){
                    if(!visited[vec[k][i]]){
-                         if(layer[vec[k][i]]==0){layer[vec[k][i]]=layer[k]+1;}
+                         layer[vec[k][i]]=layer[k]+1;
                          Q.push(vec[k][i]);
                          visited[vec[k][i]]=true;
                        }
